@@ -6,5 +6,5 @@ La diferencia más importante aparece cuando se usa `this` dentro de objetos. En
 
 También hay diferencias prácticas: las arrow functions son muy útiles para funciones cortas y rápidas (por ejemplo en `map`, `filter` o `forEach`), mientras que las regular functions son mejores cuando necesitas un comportamiento más completo, como crear objetos con `new`.
 
-En resumen: **arrow function** para escribir menos y resolver tareas pequeñas; **regular function** para casos donde necesitas más control, especialmente en objetos y lógica más estructurada.
+**arrow function** escribe menos y resuelve tareas pequeñas y **regular function** para casos donde se necesita más control, especialmente en objetos y lógica más estructurada.
 
