@@ -18,7 +18,6 @@ function ContactsApp() {
   const [loading, setLoading] = useState(true);
   const [contacts, setContacts] = useState<Contact[]>([]);
 
-  // Simula carga inicial (loader al inicio)
   useEffect(() => {
     const timer = setInterval(() => {
       setContacts(initialContacts);
@@ -37,7 +36,6 @@ function ContactsApp() {
   };
 
   const deleteContact = (index: number) => {
-    // Creamos un arreglo nuevo sin ese elemento (misma idea: actualizar estado con un nuevo array)
     setContacts((prev) => prev.filter((_, i) => i !== index));
   };
 
