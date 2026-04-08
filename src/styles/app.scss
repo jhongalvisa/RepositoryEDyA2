@@ -1,0 +1,38 @@
+$soft-background: rgba(255, 255, 255, 0.8);
+$card-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+$done-background: rgba(220, 252, 231, 0.9);
+$done-border: rgba(22, 163, 74, 0.3);
+$empty-border: rgba(79, 70, 229, 0.25);
+
+.auth-page,
+.dashboard-page,
+.task-page {
+  min-height: 100vh;
+}
+
+.auth-card,
+.stats-card,
+.task-card,
+.empty-state {
+  background: $soft-background;
+  backdrop-filter: blur(10px);
+}
+
+.auth-card,
+.stats-card,
+.task-card {
+  box-shadow: $card-shadow;
+}
+
+.task-card {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+
+  &--done {
+    background: $done-background;
+    border-color: $done-border;
+  }
+}
+
+.empty-state {
+  border: 2px dashed $empty-border;
+}

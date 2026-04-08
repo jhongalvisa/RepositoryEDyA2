@@ -1,0 +1,33 @@
+.auth-page,
+.dashboard-page,
+.task-page {
+  min-height: 100vh;
+}
+
+.auth-card,
+.stats-card,
+.task-card,
+.empty-state {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+}
+
+.auth-card,
+.stats-card,
+.task-card {
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+}
+
+.task-card {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.task-card--done {
+  border-color: rgba(22, 163, 74, 0.3);
+  background: rgba(220, 252, 231, 0.85);
+}
+
+.empty-state {
+  background: rgba(255, 255, 255, 0.75);
+  border: 2px dashed rgba(79, 70, 229, 0.25);
+}
