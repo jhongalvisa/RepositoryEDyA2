@@ -1,17 +1,22 @@
 import './BinaryTree.css'
 import TreeNode from './TreeNode'
-import Nodo from './Nodo'
+
+interface NodoArbol {
+  valor: number
+  izquierda: NodoArbol | null
+  derecha: NodoArbol | null
+}
 
 interface BinaryTreeProps {
-    raiz: Nodo | null
+  raiz: NodoArbol | null
 }
 
 function BinaryTreeD3({ raiz }: BinaryTreeProps) {
-    return (
-        <div className="tree">
-            <TreeNode node={raiz} />
-        </div>
-    )
+  return (
+    <div className="tree">
+      <TreeNode node={raiz} />
+    </div>
+  )
 }
 
 export default BinaryTreeD3

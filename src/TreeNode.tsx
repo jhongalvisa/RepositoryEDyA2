@@ -1,7 +1,11 @@
-import Nodo from './Nodo'
+interface NodoArbol {
+  valor: number
+  izquierda: NodoArbol | null
+  derecha: NodoArbol | null
+}
 
 interface TreeNodeProps {
-  node: Nodo | null
+  node: NodoArbol | null
 }
 
 function TreeNode({ node }: TreeNodeProps) {
