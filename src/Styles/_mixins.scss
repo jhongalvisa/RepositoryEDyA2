@@ -1,0 +1,28 @@
+@use "./variables" as *;
+
+@mixin tarjeta {
+  background-color: $color-card;
+  border: 1px solid $color-borde;
+  border-radius: $radio-card;
+  padding: $espaciado-card;
+}
+
+@mixin input-base {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid $color-borde;
+  border-radius: 10px;
+  background-color: $color-card-secundario;
+  color: $color-texto;
+  outline: none;
+}
+
+@mixin boton-principal {
+  background-color: $color-principal;
+  color: #000000;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
